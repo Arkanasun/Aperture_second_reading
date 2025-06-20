@@ -17,16 +17,318 @@ body {
 .container {
     max-width: 1168px;
     margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 20px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
     align-items: center;
+}
+
+header nav li {
+    margin-left: 32px;
+}
+
+header nav li:first-of-type {
+    margin-left: 24px;
+}
+
+header nav li:last-of-type {
+    margin-left: 31px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+}
+
+header nav li:first-of-type a {
+    font-size: 13px;
+}
+
+header nav li:last-of-type a {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    border-radius: 14px;
+    background: #FFF;
+    padding: 11px 20px
+}
+
+.main_banner {
+    background-image: url("../images/main_bg.jpg");
+    background-size: cover;
+    height: calc(100vh - 83px); /*    vh - высота монитора, браузер автоматически будет подстраиваться под*!*/
+    /*любой монитор*/
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 71px;
+    position: relative;
+}
+
+.main_banner .container {
+    max-width: 580px;
+    text-align: center;
+    margin: inherit;
+}
+
+.main_banner h3 {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.main_banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59.4px; /* 110% */
+    margin-bottom: 18px;
+}
+
+.main_banner p {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.sunset_at_mount {
+    min-height: 600px;
+    background-image: url('../images/mount-sector.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 60px;
+    position: relative;
+}
+
+.sunset_at_mount .container {
+    max-width: 300px;
+    text-align: left;
+    margin: inherit; /*убираем прописанный в конрейнере марджин*/
+}
+
+.sunset_at_mount .container h3 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sunset_at_mount .container p {
+    color: #C0C0C0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.monstera {
+    background-image: url('../images/monstera.jpg');
+    background-size: cover;
+    min-height: 600px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+
+.monstera .container {
+    max-width: 300px;
+    text-align: left;
+    margin: inherit;
+}
+
+.monstera article h3 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.monstera article p {
+    color: #C0C0C0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.past_clients {
+    background-color: #000000;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.past_clients .container {
+    margin: 0 auto;
+}
+
+.past_clients h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 105% */
+    margin-bottom: 15px;
+}
+
+.past_clients h4 {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin-bottom: 42px;
+}
+
+.companies-wrapper {
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+.companies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.past_clients a {
+    padding: 40px 46px;
+    justify-content: center;
+    align-items: center;
+}
+
+.past_clients .companies a img {
+    max-width: 128px;
+    width: 100%;
+}
+
+.star-fall {
+    background-image: url('../images/starfall.jpg');
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.star-fall .container {
+    max-width: 300px;
+    margin: 0;
+}
+
+.star-fall h3 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.star-fall p {
+    max-width: 241px;
+    color: #C0C0C0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.icons {
+    position: absolute;
+    right: 40px;
+    bottom: 41px;
+    display: flex;
+}
+
+.icons li {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 100% */
+    margin-left: 16px;
+    list-style: none;
+
+}
+
+.icons li:before {
+    display: inline-block;
+    content: "";
+    background-image: url('../images/icon1.svg');
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    margin-bottom: -6px;
+}
+
+.icons li:nth-child(2):before {
+    background-image: url('../images/icon2.svg');
+}
+
+.icons li:nth-child(3):before {
+    background-image: url('../images/icon3.svg');
+    width: 32px;
+    margin-right: 7px;
+}
+
+.icons li:last-of-type:before {
+    background-image: url('../images/icon4.svg');
+    width: 10px;
+    margin-right: 5px;
 }
